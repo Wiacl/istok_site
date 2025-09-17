@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ИСТОК — Главная</title>
+
+  <!-- Рекомендованные шрифты -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Merriweather:wght@300;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="logo" href="/" aria-label="ИСТОК — на главную">
+        <img src="img/logo1.jpeg" alt="ИСТОК логотип" class="logo-img" onerror="this.style.display='none'">
+        <span class="logo-text">ИСТОК</span>
+      </a>
+
+      <nav class="main-nav" role="navigation" aria-label="Главная навигация">
+        <a href="#services">Услуги</a>
+        <a href="#events">Мероприятия</a>
+        <a href="#specialists">Специалисты</a>
+        <a href="#why">Почему мы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn-contact" href="#contacts">Связаться</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-visual" aria-hidden="true"></div>
+    <div class="container hero-content">
+      <h1 class="hero-title">Ваш проводник к психологическому и духовному благополучию</h1>
+
+      <ul class="services" id="services" aria-label="Ключевые специализации">
+        <li class="service">
+          <img class="service-icon" src="img/icon_lin_psychology_256.png" alt="Психология">
+          <span>Психология</span>
+        </li>
+        <li class="service">
+          <img class="service-icon" src="img/icon_lin_help_256.png" alt="Помощь людям">
+          <span>Помощь людям</span>
+        </li>
+        <li class="service">
+          <img class="service-icon" src="img/icon_lin_tarot_256.png" alt="Таро">
+          <span>Таро</span>
+        </li>
+        <li class="service">
+          <img class="service-icon" src="img/icon_lin_artifacts_256.png" alt="Создание артефактов">
+          <span>Создание артефактов</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Events / Встречи и мероприятия -->
+  <section class="events" id="events" aria-label="Встречи и мероприятия">
+    <div class="container">
+      <h2 class="section-title">Встречи и мероприятия</h2>
+
+      <!-- Carousel -->
+      <div class="carousel" id="eventsCarousel" data-autoplay="true" data-autoplay-delay="4500" aria-roledescription="carousel">
+        <button class="carousel-btn prev" aria-label="Предыдущий слайд">&lt;</button>
+
+        <div class="carousel-track-wrap">
+          <ul class="carousel-track">
+            <li class="carousel-slide">
+              <img src="img/events/event1.jpeg" alt="Мероприятие 1">
+              <div class="slide-caption">Творческая встреча: традиции и современность</div>
+            </li>
+            <li class="carousel-slide">
+              <img src="img/events/event2.jpeg" alt="Мероприятие 2">
+              <div class="slide-caption">Мастер-класс по созданию артефактов</div>
+            </li>
+            <li class="carousel-slide">
+              <img src="img/events/event3.jpeg" alt="Мероприятие 3">
+              <div class="slide-caption">Круг практик и обмена опытом</div>
+            </li>
+            <!-- добавьте дополнительные слайды по необходимости -->
+          </ul>
+        </div>
+
+        <button class="carousel-btn next" aria-label="Следующий слайд">&gt;</button>
+
+        <div class="carousel-dots" role="tablist" aria-label="Навигация по слайдам"></div>
+      </div>
+
+      <!-- Описания мероприятий (редактируемый блок) -->
+      <div class="events-desc">
+        <h3>Описание событий</h3>
+        <p>Здесь вы можете разместить описания предстоящих и прошедших мероприятий: краткое содержание, дата, место, ссылка на регистрацию и материалы.</p>
+
+        <div class="events-list">
+          <article class="event-item">
+            <h4>Мастер-класс «Создание амулетов» — 12 октября</h4>
+            <p>Краткое описание: что будет на мастер-классе, для кого он полезен и как подготовиться.</p>
+          </article>
+
+          <article class="event-item">
+            <h4>Круг практик — прошёл 1 сентября</h4>
+            <p>Краткий отчёт: темы, отзывы и полезные материалы.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why choose us -->
+  <section class="why" id="why">
+    <div class="container">
+      <h2 class="section-title">Почему выбирают нас</h2>
+      <div class="reasons">
+        <article class="reason"><div class="reason-ico">✔</div><h3>Проверенные знания</h3><p>Мы опираемся на первоисточники и проверенные методики.</p></article>
+        <article class="reason"><div class="reason-ico">📜</div><h3>Фольклор и история</h3><p>Ценим традиции и исторические практики.</p></article>
+        <article class="reason"><div class="reason-ico">✦</div><h3>Авторские методы</h3><p>Сочетаем академические знания и авторские подходы.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Specialists -->
+  <section class="specialists" id="specialists">
+    <div class="container">
+      <h2 class="section-title">Наши специалисты</h2>
+      <p class="specialists-intro">Нажмите на фото, чтобы перейти в профиль специалиста.</p>
+
+      <div class="specialists-grid" role="list">
+        <!-- Пример карточки; фотографию оборачиваем в ссылку на профиль -->
+        <div class="spec-card" role="listitem">
+          <a href="master.html" class="spec-link" title="Перейти к профилю Имя Фамилия 1">
+            <div class="spec-photo-wrap">
+              <img loading="lazy" src="img/specialist1.jpg" alt="Имя Фамилия 1" class="spec-photo">
+            </div>
+          </a>
+          <div class="spec-info"><strong class="spec-name">Имя Фамилия 1</strong><span class="spec-role">Психолог</span></div>
+        </div>
+
+        <div class="spec-card">
+          <a href="master.html" class="spec-link">
+            <div class="spec-photo-wrap"><img loading="lazy" src="img/specialist2.jpg" alt="Имя Фамилия 2" class="spec-photo"></div>
+          </a>
+          <div class="spec-info"><strong class="spec-name">Имя Фамилия 2</strong><span class="spec-role">Таролог</span></div>
+        </div>
+
+        <div class="spec-card">
+          <a href="master.html" class="spec-link">
+            <div class="spec-photo-wrap"><img loading="lazy" src="img/specialist3.jpg" alt="Имя Фамилия 3" class="spec-photo"></div>
+          </a>
+          <div class="spec-info"><strong class="spec-name">Имя Фамилия 3</strong><span class="spec-role">Мастер артефактов</span></div>
+        </div>
+
+        <!-- Добавьте остальные карточки (до 20) -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="contacts">
+    <div class="footer-visual" aria-hidden="true"></div>
+    <div class="container footer-inner">
+      <nav class="footer-nav"><a href="#services">Услуги</a><a href="#events">Мероприятия</a><a href="#specialists">Специалисты</a></nav>
+      <div class="footer-contacts">
+        <p>Email: <a href="mailto:info@istok.example">info@istok.example</a></p>
+        <p>Телефон: <a href="tel:+79000000000">+7 (900) 000-00-00</a></p>
+      </div>
+      <div class="socials"><a href="#">fb</a><a href="#">ig</a></div>
+    </div>
+    <div class="container footer-bottom"><a class="privacy" href="#">Политика конфиденциальности</a><span>© 2025 ИСТОК</span></div>
+  </footer>
+
+  <!-- Подключаем внешний JS карусели -->
+  <script src="carousel.js" defer></script>
+</body>
+</html>

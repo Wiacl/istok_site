@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200">
+  <defs>
+    <pattern id="leafPattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+      <!-- Большой листик с наклоном -->
+      <path d="M50 10 C60 20, 70 40, 50 60 C30 40, 40 20, 50 10Z"
+            stroke="#3D2E23"
+            stroke-width="1.2"
+            fill="none"
+            opacity="0.4"
+            transform="rotate(-20,50,35)"/>
+      
+      <!-- Маленький листик с другим наклоном -->
+      <path d="M20 40 C25 45, 30 55, 20 65 C10 55, 15 45, 20 40Z"
+            stroke="#3D2E23"
+            stroke-width="1"
+            fill="none"
+            opacity="0.3"
+            transform="rotate(15,20,52)"/>
+      
+      <!-- Средний листик -->
+      <path d="M80 70 C85 75, 95 85, 80 95 C65 85, 75 75, 80 70Z"
+            stroke="#3D2E23"
+            stroke-width="1"
+            fill="none"
+            opacity="0.35"
+            transform="rotate(-35,80,82)"/>
+      
+      <!-- Дополнительный листик для плотности -->
+      <path d="M60 80 C65 90, 75 100, 60 110 C45 100, 55 90, 60 80Z"
+            stroke="#3D2E23"
+            stroke-width="1"
+            fill="none"
+            opacity="0.25"
+            transform="rotate(25,60,95)"/>
+    </pattern>
+  </defs>
+
+  <!-- Фон -->
+  <rect width="100%" height="100%" fill="url(#leafPattern)"/>
+</svg>

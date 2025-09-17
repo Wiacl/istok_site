@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Профиль мастера — Имя Фамилия | ИСТОК</title>
+
+  <!-- Шрифты (подключаем рекомендованные) -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Merriweather:wght@300;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="master.css">
+</head>
+<body>
+  <header class="topbar" role="banner">
+    <div class="wrap">
+      <a class="brand" href="index.html" aria-label="ИСТОК — на главную">
+        <span class="brand-name">ИСТОК</span>
+      </a>
+      <nav class="mini-nav" aria-label="Навигация">
+        <a href="index.html#services">Услуги</a>
+        <a href="index.html#specialists">Команда</a>
+        <a href="index.html#contacts">Контакты</a>
+      </nav>
+      <a href="#booking" class="btn-book-ghost">Записаться</a>
+    </div>
+  </header>
+
+  <!-- Название и фото -->
+  <main>
+    <section class="hero-profile" aria-label="Профиль мастера">
+      <div class="hero-left">
+        <div class="photo-wrap">
+          <img src="img/master/ekaterina_sergeeva.jpeg" alt="Екатерина Сергеева — фото" class="master-photo">
+        </div>
+        <div class="contact-quick">
+          <a href="tel:+79000000000" class="contact-line">+7 (900) 000-00-00</a>
+          <a href="mailto:master@example.com" class="contact-line">master@example.com</a>
+          <a href="#booking" class="btn-book">Записаться</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <h1 class="master-name">Екатерина Сергеева</h1>
+        <p class="master-title">Шаманка | Мастер Рейки | Психоллог</p>
+
+        <div class="master-about">
+          <h2>О мастере</h2>
+          <p>Краткое тёплое описание мастера: опыт, специализация, подход. Например: «Помогаю людям через сочетание психологических практик, работы с таро и созданием персонализированных артефактов. Работаю с первоисточниками и авторскими техниками». Можно указать образование, годы практики и ключевые принципы.</p>
+          <ul class="meta-list">
+            <li>Опыт: 9 лет</li>
+            <li>Форматы: онлайн и очно</li>
+            <li>Специальности: Таро, Шаманизм и инструменты силы, Свечи, Рэйки</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Услуги -->
+    <section class="services-section" id="services" aria-label="Услуги мастера">
+      <div class="wrap">
+        <h2>Услуги</h2>
+        <p class="lead">Ниже — стандартные сессии и мастер-классы, которые проводит мастер. Выберите желаемую услугу и нажмите «Записаться».</p>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <img src="img/icon_lin_psychology_256.png" alt="" class="service-card-icon">
+            <h3>Индивидуальная психологическая сессия</h3>
+            <p>Работаем с запросами: тревога, отношения, самооценка. 60 минут.</p>
+            <div class="service-meta">60 мин • Онлайн / Очно • 3000 ₽</div>
+            <a class="btn-small" href="#booking" aria-label="Записаться на индивидуальную сессию">Записаться</a>
+          </article>
+
+          <article class="service-card">
+            <img src="img/icon_lin_help_256.png" alt="" class="service-card-icon">
+            <h3>Поддерживающие консультации</h3>
+            <p>Короткие встречи для регулярной поддержки. 30 минут.</p>
+            <div class="service-meta">30 мин • Онлайн • 1500 ₽</div>
+            <a class="btn-small" href="#booking">Записаться</a>
+          </article>
+
+          <article class="service-card">
+            <img src="img/icon_lin_tarot_256.png" alt="" class="service-card-icon">
+            <h3>Консультация с Таро</h3>
+            <p>Глубокий расклад с практическими рекомендациями и ритуалами.</p>
+            <div class="service-meta">90 мин • Онлайн • 4000 ₽</div>
+            <a class="btn-small" href="#booking">Записаться</a>
+          </article>
+
+          <article class="service-card">
+            <img src="img/icon_lin_artifacts_256.png" alt="" class="service-card-icon">
+            <h3>Изготовление артефактов</h3>
+            <p>Индивидуальные амулеты и предметы силы по запросу.</p>
+            <div class="service-meta">под заказ • от 3500 ₽</div>
+            <a class="btn-small" href="#booking">Обсудить заказ</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Бесплатные материалы -->
+    <section class="resources" aria-label="Бесплатные материалы">
+      <div class="wrap">
+        <h2>Бесплатные материалы</h2>
+        <p class="lead">Полезные документы и практиики, которые можно скачать.</p>
+
+        <ul class="resources-list">
+          <li><a href="files/free_checklist.pdf" download>Чек-лист «Как подготовиться к сессии» (PDF)</a></li>
+          <li><a href="files/breathing_practice.mp3" download>Короткая дыхательная практика (Аудио)</a></li>
+          <li><a href="files/ritual_guide.pdf" download>Инструкция по простому обряду для гармонии (PDF)</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Контакты & запись -->
+    <section class="contact-book" id="booking" aria-label="Связаться и записаться">
+      <div class="wrap contact-grid">
+        <div class="contact-card">
+          <h2>Как связаться</h2>
+          <p>Выберите удобный способ — позвоните или отправьте сообщение. Также можно оставить заявку ниже — мы свяжемся в течение рабочего дня.</p>
+          <ul class="contact-list">
+            <li><strong>Телефон:</strong> <a href="tel:+79000000000">+7 (900) 000-00-00</a></li>
+            <li><strong>Email:</strong> <a href="mailto:master@example.com">master@example.com</a></li>
+            <li><strong>Telegram:</strong> <a href="https://t.me/yourname" target="_blank" rel="noopener">t.me/yourname</a></li>
+          </ul>
+
+          <div class="clinic-hours">
+            <strong>Часы приёма:</strong>
+            <div>Пн–Пт 10:00–19:00</div>
+          </div>
+        </div>
+
+        <div class="booking-form-card">
+          <h2>Оставить заявку</h2>
+          <form id="bookingForm" class="booking-form" action="#" method="post" onsubmit="return onSubmitForm(event)">
+            <label>
+              <span>Ваше имя</span>
+              <input type="text" name="name" required placeholder="Имя и фамилия">
+            </label>
+
+            <label>
+              <span>Телефон или email</span>
+              <input type="text" name="contact" required placeholder="+7 900 ... или email">
+            </label>
+
+            <label>
+              <span>Услуга (коротко)</span>
+              <input type="text" name="service" placeholder="Например: 60 минут — консультация">
+            </label>
+
+            <label>
+              <span>Комментарий</span>
+              <textarea name="note" rows="4" placeholder="Кратко опишите запрос"></textarea>
+            </label>
+
+            <div class="form-row">
+              <button type="submit" class="btn-cta">Отправить заявку</button>
+              <button type="button" class="btn-ghost" onclick="document.querySelector('.booking-form').reset()">Очистить</button>
+            </div>
+
+            <p class="form-note">Нажимая «Отправить», вы соглашаетесь с <a href="#">политикой конфиденциальности</a>.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="wrap">
+      <div class="footer-left">© 2025 ИСТОК</div>
+      <div class="footer-right"><a href="index.html">Вернуться на главную</a></div>
+    </div>
+  </footer>
+
+  <script>
+    // Примитивная обработка формы (заглушка) — можно заменить на AJAX
+    function onSubmitForm(e){
+      e.preventDefault();
+      const form = e.target;
+      const name = form.name.value.trim();
+      const contact = form.contact.value.trim();
+      if(!name || !contact){
+        alert('Пожалуйста, заполните имя и контакт.');
+        return false;
+      }
+      // Здесь можно отправить данные на сервер через fetch()
+      alert('Заявка отправлена — спасибо! Мы свяжемся в ближайшее время.');
+      form.reset();
+      return false;
+    }
+  </script>
+</body>
+</html>
