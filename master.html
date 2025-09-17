@@ -5,93 +5,100 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Профиль мастера — Имя Фамилия | ИСТОК</title>
 
-  <!-- Шрифты (подключаем рекомендованные) -->
+  <!-- Шрифты -->
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Merriweather:wght@300;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 
+  <!-- Стили -->
   <link rel="stylesheet" href="master.css">
 </head>
 <body>
+  <!-- TOPBAR -->
   <header class="topbar" role="banner">
     <div class="wrap">
       <a class="brand" href="index.html" aria-label="ИСТОК — на главную">
         <span class="brand-name">ИСТОК</span>
       </a>
-      <nav class="mini-nav" aria-label="Навигация">
+
+      <nav class="mini-nav" aria-label="Навигация по сайту">
         <a href="index.html#services">Услуги</a>
+        <a href="index.html#events">Мероприятия</a>
         <a href="index.html#specialists">Команда</a>
         <a href="index.html#contacts">Контакты</a>
       </nav>
-      <a href="#booking" class="btn-book-ghost">Записаться</a>
+
+      <a class="btn-ghost" href="index.html" aria-label="Вернуться на главную">На главную</a>
     </div>
   </header>
 
-  <!-- Название и фото -->
   <main>
+    <!-- HERO / профайл -->
     <section class="hero-profile" aria-label="Профиль мастера">
       <div class="hero-left">
-        <div class="photo-wrap">
-          <img src="img/master/ekaterina_sergeeva.jpeg" alt="Екатерина Сергеева — фото" class="master-photo">
+        <div class="photo-wrap" aria-hidden="false">
+          <img src="img/master/ekaterina_sergeeva.jpeg" alt="Имя Фамилия — фото мастера" class="master-photo">
         </div>
-        <div class="contact-quick">
-          <a href="tel:+79000000000" class="contact-line">+7 (900) 000-00-00</a>
-          <a href="mailto:master@example.com" class="contact-line">master@example.com</a>
-          <a href="#booking" class="btn-book">Записаться</a>
+
+        <div class="contact-quick" aria-labelledby="contact-quick-title">
+          <h3 id="contact-quick-title" class="sr-only">Контакты мастера</h3>
+          <a class="contact-line" href="tel:+79000000000">+7 (900) 000-00-00</a>
+          <a class="contact-line" href="mailto:master@example.com">master@example.com</a>
+
+          <div class="tg-block" aria-label="Telegram мастера">
+            <a class="tg-link" href="https://t.me/yourname" target="_blank" rel="noopener" aria-label="Перейти в Telegram канал мастера">
+              <!-- простая SVG-иконка Telegram (монохромная) -->
+              <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path fill="currentColor" d="M21.1 3.3c-.3-.3-.8-.5-1.2-.4L3.9 8.3c-.9.3-.9 1.5 0 1.8l3 1c.4.1.9-.1 1.1-.4l1.9-2.8c.2-.3.5-.3.7-.1l3.8 3.4c.4.4.9.2 1.1-.3l2.1-8.1c.1-.4 0-.9-.4-1.1z"/>
+              </svg>
+              <span class="tg-text">t.me/yourname</span>
+            </a>
+            <p class="tg-note">Подписывайтесь на канал мастера — анонсы, материалы и записи.</p>
+          </div>
         </div>
       </div>
 
       <div class="hero-right">
-        <h1 class="master-name">Екатерина Сергеева</h1>
-        <p class="master-title">Шаманка | Мастер Рейки | Психоллог</p>
+        <h1 class="master-name">Имя Фамилия</h1>
+        <p class="master-title">Психолог • Проводник • Создатель артефактов</p>
 
-        <div class="master-about">
-          <h2>О мастере</h2>
-          <p>Краткое тёплое описание мастера: опыт, специализация, подход. Например: «Помогаю людям через сочетание психологических практик, работы с таро и созданием персонализированных артефактов. Работаю с первоисточниками и авторскими техниками». Можно указать образование, годы практики и ключевые принципы.</p>
-          <ul class="meta-list">
-            <li>Опыт: 9 лет</li>
-            <li>Форматы: онлайн и очно</li>
-            <li>Специальности: Таро, Шаманизм и инструменты силы, Свечи, Рэйки</li>
+        <div class="master-about" aria-labelledby="about-title">
+          <h2 id="about-title">О мастере</h2>
+          <p>Краткое тёплое описание: опыт, подход, направления работы. Например: «Работаю с глубокими личными запросами, сочетая психологические техники и традиционные практики. Создаю персональные артефакты на основе анализа потребностей и символики.»</p>
+
+          <ul class="meta-list" aria-label="Ключевые данные мастера">
+            <li>Опыт: 8 лет</li>
+            <li>Форматы: онлайн / очно</li>
+            <li>Специальности: терапия • таро • артефакты</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- Услуги -->
+    <!-- Услуги мастера -->
     <section class="services-section" id="services" aria-label="Услуги мастера">
       <div class="wrap">
         <h2>Услуги</h2>
-        <p class="lead">Ниже — стандартные сессии и мастер-классы, которые проводит мастер. Выберите желаемую услугу и нажмите «Записаться».</p>
+        <p class="lead">Краткое описание услуг, которые предлагает мастер.</p>
 
-        <div class="services-grid">
-          <article class="service-card">
+        <div class="services-grid" role="list">
+          <article class="service-card" role="listitem">
             <img src="img/icon_lin_psychology_256.png" alt="" class="service-card-icon">
             <h3>Индивидуальная психологическая сессия</h3>
-            <p>Работаем с запросами: тревога, отношения, самооценка. 60 минут.</p>
-            <div class="service-meta">60 мин • Онлайн / Очно • 3000 ₽</div>
-            <a class="btn-small" href="#booking" aria-label="Записаться на индивидуальную сессию">Записаться</a>
+            <p>Глубокая работа с текущими запросами, поддержка изменений и восстановление ресурса.</p>
+            <div class="service-meta">60 мин • Онлайн / Очно</div>
           </article>
 
-          <article class="service-card">
-            <img src="img/icon_lin_help_256.png" alt="" class="service-card-icon">
-            <h3>Поддерживающие консультации</h3>
-            <p>Короткие встречи для регулярной поддержки. 30 минут.</p>
-            <div class="service-meta">30 мин • Онлайн • 1500 ₽</div>
-            <a class="btn-small" href="#booking">Записаться</a>
-          </article>
-
-          <article class="service-card">
+          <article class="service-card" role="listitem">
             <img src="img/icon_lin_tarot_256.png" alt="" class="service-card-icon">
             <h3>Консультация с Таро</h3>
-            <p>Глубокий расклад с практическими рекомендациями и ритуалами.</p>
-            <div class="service-meta">90 мин • Онлайн • 4000 ₽</div>
-            <a class="btn-small" href="#booking">Записаться</a>
+            <p>Расклад с интерпретацией, практическими рекомендациями и ритуальными шагами.</p>
+            <div class="service-meta">90 мин • Онлайн</div>
           </article>
 
-          <article class="service-card">
+          <article class="service-card" role="listitem">
             <img src="img/icon_lin_artifacts_256.png" alt="" class="service-card-icon">
             <h3>Изготовление артефактов</h3>
-            <p>Индивидуальные амулеты и предметы силы по запросу.</p>
-            <div class="service-meta">под заказ • от 3500 ₽</div>
-            <a class="btn-small" href="#booking">Обсудить заказ</a>
+            <p>Персональные амулеты и предметы силы, изготовленные вручную.</p>
+            <div class="service-meta">Под заказ</div>
           </article>
         </div>
       </div>
@@ -101,92 +108,75 @@
     <section class="resources" aria-label="Бесплатные материалы">
       <div class="wrap">
         <h2>Бесплатные материалы</h2>
-        <p class="lead">Полезные документы и практиики, которые можно скачать.</p>
-
+        <p class="lead">Практики, чек-листы и короткие записи.</p>
         <ul class="resources-list">
           <li><a href="files/free_checklist.pdf" download>Чек-лист «Как подготовиться к сессии» (PDF)</a></li>
-          <li><a href="files/breathing_practice.mp3" download>Короткая дыхательная практика (Аудио)</a></li>
-          <li><a href="files/ritual_guide.pdf" download>Инструкция по простому обряду для гармонии (PDF)</a></li>
+          <li><a href="files/breathing_practice.mp3" download>Короткая дыхательная практика (MP3)</a></li>
         </ul>
       </div>
     </section>
 
-    <!-- Контакты & запись -->
-    <section class="contact-book" id="booking" aria-label="Связаться и записаться">
+    <!-- Отзывы (карусель фотографий отзывов) -->
+    <section class="reviews" aria-label="Отзывы о мастере">
+      <div class="wrap">
+        <h2>Отзывы</h2>
+        <p class="lead">Фотографии и скриншоты отзывов. Листайте в карусели.</p>
+
+        <!-- карусель отзывов (совместимо с carousel.js) -->
+        <div class="carousel review-carousel" data-autoplay="false" aria-roledescription="carousel reviews">
+          <button class="carousel-btn prev" aria-label="Предыдущий отзыв">&lt;</button>
+
+          <div class="carousel-track-wrap">
+            <ul class="carousel-track">
+              <li class="carousel-slide"><img src="img/reviews/rev1.png" alt="Отзыв 1 — фото"></li>
+              <li class="carousel-slide"><img src="img/reviews/rev2.png" alt="Отзыв 2 — фото"></li>
+              <li class="carousel-slide"><img src="img/reviews/rev3.png" alt="Отзыв 3 — фото"></li>
+              <!-- Добавляйте сколько нужно: rev4.jpg, rev5.jpg ... -->
+            </ul>
+          </div>
+
+          <button class="carousel-btn next" aria-label="Следующий отзыв">&gt;</button>
+
+          <div class="carousel-dots" role="tablist" aria-label="Навигация по отзывам"></div>
+        </div>
+
+        <div class="reviews-text">
+          <h3>Кратко об отзывах</h3>
+          <p>Добавьте сюда сводку впечатлений клиентов, выделите пару цитат или оставьте ссылки на полные отзывы.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Контакты и канал -->
+    <section class="contact" aria-label="Контакты мастера">
       <div class="wrap contact-grid">
         <div class="contact-card">
           <h2>Как связаться</h2>
-          <p>Выберите удобный способ — позвоните или отправьте сообщение. Также можно оставить заявку ниже — мы свяжемся в течение рабочего дня.</p>
           <ul class="contact-list">
             <li><strong>Телефон:</strong> <a href="tel:+79000000000">+7 (900) 000-00-00</a></li>
             <li><strong>Email:</strong> <a href="mailto:master@example.com">master@example.com</a></li>
-            <li><strong>Telegram:</strong> <a href="https://t.me/yourname" target="_blank" rel="noopener">t.me/yourname</a></li>
+            <li><strong>Telegram:</strong> <a class="tg-inline" href="https://t.me/yourname" target="_blank" rel="noopener">t.me/yourname</a></li>
           </ul>
-
-          <div class="clinic-hours">
-            <strong>Часы приёма:</strong>
-            <div>Пн–Пт 10:00–19:00</div>
-          </div>
         </div>
 
-        <div class="booking-form-card">
-          <h2>Оставить заявку</h2>
-          <form id="bookingForm" class="booking-form" action="#" method="post" onsubmit="return onSubmitForm(event)">
-            <label>
-              <span>Ваше имя</span>
-              <input type="text" name="name" required placeholder="Имя и фамилия">
-            </label>
-
-            <label>
-              <span>Телефон или email</span>
-              <input type="text" name="contact" required placeholder="+7 900 ... или email">
-            </label>
-
-            <label>
-              <span>Услуга (коротко)</span>
-              <input type="text" name="service" placeholder="Например: 60 минут — консультация">
-            </label>
-
-            <label>
-              <span>Комментарий</span>
-              <textarea name="note" rows="4" placeholder="Кратко опишите запрос"></textarea>
-            </label>
-
-            <div class="form-row">
-              <button type="submit" class="btn-cta">Отправить заявку</button>
-              <button type="button" class="btn-ghost" onclick="document.querySelector('.booking-form').reset()">Очистить</button>
-            </div>
-
-            <p class="form-note">Нажимая «Отправить», вы соглашаетесь с <a href="#">политикой конфиденциальности</a>.</p>
-          </form>
+        <div class="socials-card">
+          <h2>Канал и материалы</h2>
+          <p>Подписывайтесь на Telegram для анонсов, материалов и быстрых ответов.</p>
+          <a class="btn-tg" href="https://t.me/yourname" target="_blank" rel="noopener">Перейти в Telegram</a>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer" role="contentinfo">
     <div class="wrap">
-      <div class="footer-left">© 2025 ИСТОК</div>
-      <div class="footer-right"><a href="index.html">Вернуться на главную</a></div>
+      <div>© 2025 ИСТОК</div>
+      <div><a href="index.html">Вернуться на главную</a></div>
     </div>
   </footer>
 
-  <script>
-    // Примитивная обработка формы (заглушка) — можно заменить на AJAX
-    function onSubmitForm(e){
-      e.preventDefault();
-      const form = e.target;
-      const name = form.name.value.trim();
-      const contact = form.contact.value.trim();
-      if(!name || !contact){
-        alert('Пожалуйста, заполните имя и контакт.');
-        return false;
-      }
-      // Здесь можно отправить данные на сервер через fetch()
-      alert('Заявка отправлена — спасибо! Мы свяжемся в ближайшее время.');
-      form.reset();
-      return false;
-    }
-  </script>
+  <!-- Подключение внешней логики карусели (положи рядом файл carousel.js) -->
+  <script src="carousel.js" defer></script>
 </body>
 </html>
