@@ -66,7 +66,7 @@ a:hover{ text-decoration:underline }
 
 /* ========== TOPBAR ========== */
 .topbar{
-  background: rgba(232,218,186,0.98);
+  background: url(/img/header_bg_from_logo.png) center / cover no-repeat;
   position: sticky;
   top:0;
   z-index:110;
@@ -94,7 +94,7 @@ a:hover{ text-decoration:underline }
   /* фон: градиент поверх фото — cover */
   background:
     linear-gradient(180deg, rgba(232,218,186,0.14), rgba(232,218,186,0.06)),
-    url("img/hero_bg_from_logo.png") center/cover no-repeat;
+    url("/img/hero_bg_from_logo.png") center/cover no-repeat;
   background-clip: border-box;
 }
 
@@ -103,25 +103,13 @@ a:hover{ text-decoration:underline }
   content:"";
   position:absolute;
   left:0; right:0; top:-90px; height:220px;
-  background: url("img/forest_wave_blur.svg") center top / cover no-repeat;
+  background: url("/img/forest_wave_blur.svg") center top / cover no-repeat;
   filter: blur(10px);
   z-index:0;
   opacity:0.95;
   pointer-events:none;
 }
 
-/* паттерн листьев поверх */
-.hero-profile::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background-image: url("img/leaves_pattern_from_logo.svg");
-  background-repeat: repeat;
-  background-size: 220px 220px;
-  opacity:0.14;
-  z-index:1;
-  pointer-events:none;
-}
 
 /* контент поверх слоёв фона */
 .hero-left, .hero-right{ position:relative; z-index:2; }
@@ -155,13 +143,18 @@ a:hover{ text-decoration:underline }
 .meta-list li{ background:#f8efe4; padding:8px 12px; border-radius:10px; color:#6b574f; font-weight:600; }
 
 /* ========== Услуги ========== */
-.services-section{ padding-top:40px; padding-bottom:40px; background:transparent; }
+.services-section{ padding-top:40px; padding-bottom:40px; background:transparent;box-shadow:var(--shadow) }
 .services-grid{ display:grid; gap:18px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
 .service-card{ background:linear-gradient(180deg,#fff,#fbf7f3); border-radius:12px; padding:16px; box-shadow:var(--shadow); display:flex; flex-direction:column; gap:10px; }
 .service-card-icon{ width:56px; height:56px; object-fit:contain; }
 
 /* ========== Ресурсы ========== */
-.resources{ padding-top:40px; padding-bottom:40px; background:transparent; }
+.resources{ 
+  padding-top:40px; 
+  padding-bottom:40px; 
+  background:#828c7223;
+  box-shadow:var(--shadow)
+}
 .resources-list{ padding-left:18px; }
 
 /* ========== Отзывы (карусель) ========== */

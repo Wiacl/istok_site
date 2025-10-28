@@ -49,15 +49,17 @@ a { color: inherit; }
 a:hover { text-decoration: underline; }
 
 /* ========== HEADER ========== */
-.site-header{
+
+.site-header {
   position: sticky;
   top: 0;
   z-index: 60;
-  background: url("img/header_bg_from_logo.png") center/cover no-repeat;
-  background-color: rgba(232,218,186,0.96);
-  box-shadow: 0 1px 0 rgba(0,0,0,0.04);
+  background: url(/img/header_bg_from_logo.png) center / cover no-repeat;
+  background-color: rgba(232, 218, 186, 0.96);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
   backdrop-filter: blur(4px);
 }
+
 .header-inner{
   display:flex;
   align-items:center;
@@ -104,35 +106,13 @@ a:hover { text-decoration: underline; }
   position:relative;
   overflow:hidden;
   background:
-    linear-gradient(180deg, rgba(167,175,129,0.14), rgba(232,218,186,0.06)),
-    url("img/hero_bg_from_logo.png") center/cover no-repeat;
+    linear-gradient(180deg, rgba(167,175,129,0.14), rgba(232,218,186,0.06)), url("/img/hero_bg_from_logo.png") center/cover no-repeat;
   min-height: 560px;
   display:flex;
   align-items:center;
   padding:56px 0;
 }
 
-/* паттерн листьев и размытие-волна */
-.hero::after{
-  content: "";
-  position:absolute;
-  inset:0;
-  background-image: url("img/leaves_pattern_from_logo.svg");
-  background-repeat: repeat;
-  background-size: 200px 200px;
-  opacity: 0.14;
-  z-index:1;
-  pointer-events:none;
-}
-.hero::before{
-  content: "";
-  position:absolute;
-  left:0; right:0; top:-60px; height:180px;
-  background: url("img/forest_wave_blur.svg") center top / cover no-repeat;
-  filter: blur(10px);
-  z-index:2;
-  opacity:0.9;
-}
 
 /* контент поверх фона */
 .hero-content{ position:relative; z-index:3; width:100%; padding: 28px 0; text-align:center; }
@@ -232,12 +212,13 @@ a:hover { text-decoration: underline; }
   display:flex;
   flex-direction:column;
   align-items:center;
+  text-align: center;
 }
 
 /* изображения слайда */
 .carousel-slide img{
-  width:100%;
-  height:380px;
+  width:90%;
+  height:auto;
   object-fit:cover;
   border-radius:12px;
   display:block;
@@ -358,3 +339,4 @@ input[type="text"], input[type="email"], textarea, select {
 /* ========== ДОП. УТИЛИТЫ ========== */
 .hidden { display:none !important; }
 .sr-only { position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden; }
+

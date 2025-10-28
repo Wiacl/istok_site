@@ -8,7 +8,7 @@
   <!-- Рекомендованные шрифты -->
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Merriweather:wght@300;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <!-- Header -->
@@ -20,7 +20,7 @@
       </a>
 
       <nav class="main-nav" role="navigation" aria-label="Главная навигация">
-        <a href="#events">Мероприятия</a>
+        <a href="events.html">Мероприятия</a>
         <a href="#specialists">Специалисты</a>
         <a href="#why">Почему мы</a>
       </nav>
@@ -131,7 +131,7 @@
       <div class="specialists-grid" role="list">
         <!-- Пример карточки; фотографию оборачиваем в ссылку на профиль -->
         <div class="spec-card" role="listitem">
-          <a href="master.html" class="spec-link" title="Перейти к профилю Имя Фамилия 1">
+          <a href="/masters/sergeeva1.html" class="spec-link" title="Перейти к профилю Имя Фамилия 1">
             <div class="spec-photo-wrap">
               <img loading="lazy" src="img/master/ekaterina_sergeeva.jpeg" alt="Имя Фамилия 1" class="spec-photo">
             </div>
@@ -140,15 +140,15 @@
         </div>
 
         <div class="spec-card">
-          <a href="master.html" class="spec-link">
-            <div class="spec-photo-wrap"><img loading="lazy" src="img/specialist2.jpg" alt="Имя Фамилия 2" class="spec-photo"></div>
+          <a href="/masters/baraova.html" class="spec-link">
+            <div class="spec-photo-wrap"><img loading="lazy" src="img/master/maria_baranova.jpeg" alt="Имя Фамилия 2" class="spec-photo"></div>
           </a>
           <div class="spec-info"><strong class="spec-name">Имя Фамилия 2</strong><span class="spec-role">Таролог</span></div>
         </div>
 
         <div class="spec-card">
-          <a href="master.html" class="spec-link">
-            <div class="spec-photo-wrap"><img loading="lazy" src="img/specialist3.jpg" alt="Имя Фамилия 3" class="spec-photo"></div>
+          <a href="/masters/bruja.html" class="spec-link">
+            <div class="spec-photo-wrap"><img loading="lazy" src="img/master/innes_la_bruha.jpeg" alt="Имя Фамилия 3" class="spec-photo"></div>
           </a>
           <div class="spec-info"><strong class="spec-name">Имя Фамилия 3</strong><span class="spec-role">Мастер артефактов</span></div>
         </div>
@@ -173,6 +173,6 @@
   </footer>
 
   <!-- Подключаем внешний JS карусели -->
-  <script src="carousel.js" defer></script>
+  <script src="/js/carousel.js" defer></script>
 </body>
 </html>
