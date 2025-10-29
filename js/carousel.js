@@ -1,3 +1,4 @@
+
 /**
  * carousel.js
  * Универсальная карусель на базе CSS Scroll-Snap + управляемая прокрутка.
@@ -7,7 +8,7 @@
  * - IntersectionObserver для точного определения активного слайда
  * - Prev/Next с циклической (loop) навигацией (после последнего — первый и т.д.)
  * - Кнопки, точки (dots), клавиши стрелок, пауза при hover/focus, автоплей (опционально)
- * - Работает с любым количеством слайдов
+ * - Всегда 3 точки независимо от количества слайдов
  *
  * Поддерживаемые data-атрибуты на контейнере .carousel:
  * - data-autoplay="true" | "false" (по умолчанию включён)
@@ -75,15 +76,20 @@
     function buildDots() {
       if (!dotsWrap) return;
       dotsWrap.innerHTML = '';
-      dots = slides.map((_, i) => {
+      
+      // Всегда создаем только 3 точки независимо от количества слайдов
+      const totalDots = 3;
+      dots = Array.from({ length: totalDots }, (_, i) => {
         const btn = document.createElement('button');
         btn.className = 'dot';
         btn.type = 'button';
-        btn.setAttribute('aria-label', `Перейти к слайду ${i + 1}`);
-        btn.dataset.index = i;
+        btn.setAttribute('aria-label', `Перейти к группе слайдов ${i + 1}`);
+        btn.dataset.dotIndex = i;
         btn.addEventListener('click', (e) => {
           e.preventDefault();
-          goTo(i);
+          // При клике на точку переходим к соответствующей группе слайдов
+          const targetIndex = Math.floor((i / totalDots) * slides.length);
+          goTo(targetIndex);
         });
         dotsWrap.appendChild(btn);
         return btn;
@@ -94,7 +100,12 @@
     function updateDots() {
       if (!dots.length) return;
       dots.forEach(d => d.classList.remove('active'));
-      const idx = clampIndex(currentIndex);
+      
+      // Определяем, какая точка должна быть активной
+      const totalDots = dots.length;
+      const activeDotIndex = Math.floor((currentIndex / slides.length) * totalDots);
+      const idx = Math.min(activeDotIndex, totalDots - 1);
+      
       if (dots[idx]) dots[idx].classList.add('active');
     }
 
