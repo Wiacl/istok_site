@@ -214,7 +214,7 @@ a:hover{ text-decoration:underline }
   display:flex;
   align-items:center;
   justify-content:center;
-  background: rgba(255,255,255,0.98); /* светлый фон вокруг скриншотов */
+  
   border-radius: 10px;
   padding: 8px;
   box-shadow: 0 12px 30px rgba(0,0,0,0.08);
@@ -251,7 +251,7 @@ a:hover{ text-decoration:underline }
 .btn-tg{ display:inline-block; margin-top:8px; background:var(--purple); color:var(--sand); padding:10px 14px; border-radius:12px; text-decoration:none; }
 
 /* Footer */
-.site-footer{ background: var(--purple); color:var(--sand); padding:18px 0; }
+.site-footer{ display: flex;background: var(--purple); color:var(--sand); padding:18px 0; }
 .site-footer a{ color:var(--sand); text-decoration:none }
 
 /* ========== Адаптив ========== */
