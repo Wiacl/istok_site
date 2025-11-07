@@ -117,7 +117,7 @@ a:hover{ text-decoration:underline }
 /* левая колонка */
 .hero-left{ width:320px; display:flex; flex-direction:column; gap:18px; align-items:center; }
 .photo-wrap{ width:100%; max-width:320px; border-radius:14px; overflow:hidden; box-shadow:var(--shadow); background:#efe6da; }
-.master-photo{ width:100%; height:auto; display:block; object-fit:cover; aspect-ratio:3/4; }
+.master-photo{ width:100%; height:auto; display:block; object-fit:cover; display:block; object-position: center top; }
 
 /* быстрые контакты */
 .contact-quick{ width:100%; background: rgba(255,255,255,0.95); padding:14px; border-radius:12px; text-align:center; box-shadow:var(--shadow-soft); }
