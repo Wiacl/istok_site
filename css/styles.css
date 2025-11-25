@@ -715,3 +715,196 @@ input[type="text"], input[type="email"], textarea, select {
 .hidden { display:none !important; }
 .sr-only { position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden; }
 
+
+/* Hero Marathon */
+.hero--marathon {
+  background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+  color: white;
+  padding: 100px 0 60px;
+}
+
+.hero__info {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+}
+
+/* About Marathon */
+.about-marathon__text {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.feature {
+  text-align: center;
+  padding: 30px 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.feature i {
+  font-size: 40px;
+  color: #3498db;
+  margin-bottom: 20px;
+}
+
+.feature h4 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+/* Event Cards */
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.event-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+}
+
+.event-card__content {
+  padding: 30px;
+}
+
+.event-card__title {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.event-card__description {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.event-card__lecturer {
+  margin-bottom: 15px;
+  color: #3498db;
+  font-weight: 500;
+}
+
+.event-card__time {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #7f8c8d;
+  font-size: 14px;
+}
+
+/* Event Info */
+.event-info {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.info-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.info-card__icon {
+  font-size: 40px;
+  color: #3498db;
+  margin-bottom: 20px;
+}
+
+.info-card h3 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.info-card p {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.note {
+  font-size: 12px;
+  color: #7f8c8d;
+  margin-top: 15px;
+}
+
+.registration-cta {
+  text-align: center;
+  padding: 40px;
+  background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
+  color: white;
+  border-radius: 10px;
+}
+
+.registration-cta h3 {
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.registration-cta p {
+  margin-bottom: 25px;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero__info {
+      flex-direction: column;
+      gap: 15px;
+  }
+  
+  .features {
+      grid-template-columns: 1fr;
+  }
+  
+  .events-grid {
+      grid-template-columns: 1fr;
+  }
+  
+  .info-cards {
+      grid-template-columns: 1fr;
+  }
+  
+  .event-card__content {
+      padding: 20px;
+  }
+}
